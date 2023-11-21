@@ -40,10 +40,16 @@
     margin-top: -10px;
     display: block;
 }
+html,
+body {
+    overflow-x: hidden;
+}
 body {
     font-family: "poppins", sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
+    margin: 0;
+    padding: 0;
 }
 header {
     position: fixed;
@@ -917,6 +923,12 @@ footer a i {
     .skill-main {
         grid-template-columns: 1fr;
     }
+    .filter-buttons {
+        margin: 2.5rem 0;
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
     /* .home-images img {
         height: 50px;
     } */
@@ -979,6 +991,12 @@ footer a i {
 }
 
 @media (max-width: 600px) {
+    html {
+        font-size: 80%;
+    }
+    footer p {
+        font-size: 0.6rem;
+    }
     .home-images {
         display: flex;
         text-align: center;
@@ -1002,6 +1020,33 @@ footer a i {
     }
     .home-content p {
         margin-top: 5px;
+    }
+    .filter-buttons .btn {
+        font-size: 0.8rem;
+    }
+    .img-about img {
+        width: 300px;
+    }
+    .img-about p {
+        font-size: 1rem;
+    }
+    .port-box {
+        max-width: 80%;
+        display: flex;
+        left: 5%;
+    }
+    .port-image img {
+        max-width: 100%;
+    }
+    .services .different {
+        max-width: 90%;
+        margin-right: 5%;
+    }
+    .home-content p {
+        max-width: 80%;
+    }
+    .home-images {
+        padding-right: 20%;
     }
     /* .product {
         width: 90%;
