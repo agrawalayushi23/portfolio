@@ -1048,6 +1048,26 @@ footer a i {
     .home-images {
         padding-right: 20%;
     }
+    .scroll-scale {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 2s;
+}
+.scroll-bottom {
+    opacity: 0;
+    transform: translateY(-300px);
+    transition: 3s;
+}
+.show-items {
+    opacity: 1;
+    transform: translateX(0);
+}
+.scroll-top {
+    opacity: 0;
+    transform: translateY(300px);
+    transition: 3s;
+}
+
     /* .product {
         width: 90%;
     } */
